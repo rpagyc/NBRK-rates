@@ -20,6 +20,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.io.StringReader;
+import java.net.URL;
 
 /**
  * Created with IntelliJ IDEA.
@@ -63,17 +64,24 @@ public class XMLParser {
 
     /**
      * Getting XML DOM element
-     * @param xml
+     * @param url
      * @return Document
      */
-    public Document getDomElement(String xml) {
+    public Document getDomElement(String url) {
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+
         Document doc = null;
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+
         try {
+            URL serviceURL = new URL(url);
+
             DocumentBuilder db = dbf.newDocumentBuilder();
-            InputSource is = new InputSource();
-            is.setCharacterStream(new StringReader(xml));
-            doc = db.parse(is);
+            //InputSource is = new InputSource();
+            //is.setCharacterStream(new StringReader(xml));
+            doc = db.parse(new InputSource(serviceURL.openStream()));
+            doc.getDocumentElement().normalize();
         } catch (ParserConfigurationException e) {
             Log.e("Error: ", e.getMessage());
             return null;

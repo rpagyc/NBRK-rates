@@ -13,9 +13,9 @@ import java.util.HashMap;
 public class MainActivity extends Activity {
     // all static variables
     static final String URL = "http://nationalbank.kz/rss/rates_all.xml";
-    static final String KEY_FC = "fc";
-    static final String KEY_FC_LABEL = "fc_label";
-    static final String KEY_PRICE = "price";
+    static final String KEY_FC = "title";
+    static final String KEY_FC_LABEL = "НАЗВАНИЕ ВАЛЮТЫ";
+    static final String KEY_PRICE = "description";
 
     ListView list;
     RatesAdapter adapter;
@@ -30,8 +30,8 @@ public class MainActivity extends Activity {
         ArrayList<HashMap<String,String>> rates = new ArrayList<HashMap<String, String>>();
 
         XMLParser parser = new XMLParser();
-        String xml = parser.getXMLFromUrl(URL);
-        Document doc = parser.getDomElement(xml);
+        //String xml = parser.getXMLFromUrl(URL);
+        Document doc = parser.getDomElement(URL);
 
         NodeList nl = doc.getElementsByTagName("item");
 
@@ -39,9 +39,9 @@ public class MainActivity extends Activity {
             HashMap<String, String> map = new HashMap<String, String>();
             Element e = (Element) nl.item(i);
 
-            map.put(KEY_FC, parser.getValue(e,"title"));
-            map.put(KEY_FC_LABEL, "Название валюты");
-            map.put(KEY_PRICE, parser.getValue(e,"description"));
+            map.put(KEY_FC, parser.getValue(e,KEY_FC));
+            map.put(KEY_FC_LABEL, KEY_FC_LABEL);
+            map.put(KEY_PRICE, parser.getValue(e,KEY_PRICE));
 
             rates.add(map);
         }
