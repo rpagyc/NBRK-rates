@@ -2,12 +2,15 @@ package com.nbrk.rates;
 
 import android.app.Activity;
 import android.content.Context;
+import android.os.Debug;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import junit.framework.Assert;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -67,14 +70,20 @@ public class RatesAdapter extends BaseAdapter {
 
         String currency = rates.get(MainActivity.KEY_FC);
 
-        if (currency.equalsIgnoreCase("USD")) {
-            flag.setImageResource(R.drawable.usd);
-        } else if (currency.equalsIgnoreCase("EUR")) {
-            flag.setImageResource(R.drawable.eur);
-        } else if (currency.equalsIgnoreCase("RUB")) {
-            flag.setImageResource(R.drawable.rub);
+        //TRY fix
+        if (currency.equalsIgnoreCase("TRY")) {
+            currency = "YTL";
         }
 
+        flag.setImageResource(getDrawable(activity.getApplicationContext(), currency.toLowerCase()));
+
         return rowView;
+    }
+
+    public static int getDrawable(Context context, String name) {
+        Assert.assertNotNull(context);
+        Assert.assertNotNull(name);
+        //Log.d("Flag: ", name + " " + context.getResources().getIdentifier(name,"drawable",context.getPackageName()));
+        return context.getResources().getIdentifier(name,"drawable",context.getPackageName());
     }
 }

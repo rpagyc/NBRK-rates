@@ -27,6 +27,7 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
         ArrayList<HashMap<String,String>> rates = new ArrayList<HashMap<String, String>>();
 
         XMLParser parser = new XMLParser();
@@ -43,30 +44,11 @@ public class MainActivity extends Activity {
             map.put(KEY_FC_LABEL, KEY_FC_LABEL);
             map.put(KEY_PRICE, parser.getValue(e,KEY_PRICE));
 
-            rates.add(map);
+            if (!parser.getValue(e,KEY_FC).equalsIgnoreCase("TRL")) {
+                rates.add(map);
+            }
         }
-        /*
-        HashMap<String, String> map = new HashMap<String, String>();
-        map.put(KEY_FC,"USD");
-        map.put(KEY_FC_LABEL,"ДОЛЛАР США");
-        map.put(KEY_PRICE,"149.8");
 
-        rates.add(map);
-
-        map = new HashMap<String, String>();
-        map.put(KEY_FC,"EUR");
-        map.put(KEY_FC_LABEL,"ЕВРО");
-        map.put(KEY_PRICE,"182.3");
-
-        rates.add(map);
-
-        map = new HashMap<String, String>();
-        map.put(KEY_FC,"RUB");
-        map.put(KEY_FC_LABEL,"РОССИЙСКИЙ РУБЛЬ");
-        map.put(KEY_PRICE,"4.4");
-
-        rates.add(map);
-        */
         list = (ListView)findViewById(R.id.list);
         adapter = new RatesAdapter(this, rates);
         list.setAdapter(adapter);
