@@ -62,13 +62,12 @@ public class RatesAdapter extends BaseAdapter {
 
         HashMap<String, String> rates = new HashMap<String, String>();
         rates = data.get(position);
+        String currency = rates.get(MainActivity.KEY_FC);
 
         // setting values in listview
-        fc.setText(rates.get(MainActivity.KEY_FC));
-        fc_label.setText(rates.get(MainActivity.KEY_FC_LABEL));
+        fc.setText(currency);
+        fc_label.setText(getFCLabel(activity.getApplicationContext(),currency));
         price.setText(rates.get(MainActivity.KEY_PRICE));
-
-        String currency = rates.get(MainActivity.KEY_FC);
 
         //TRY fix
         if (currency.equalsIgnoreCase("TRY")) {
@@ -85,5 +84,12 @@ public class RatesAdapter extends BaseAdapter {
         Assert.assertNotNull(name);
         //Log.d("Flag: ", name + " " + context.getResources().getIdentifier(name,"drawable",context.getPackageName()));
         return context.getResources().getIdentifier(name,"drawable",context.getPackageName());
+    }
+
+    public static int getFCLabel(Context context, String name) {
+        Assert.assertNotNull(context);
+        Assert.assertNotNull(name);
+        Log.d("Flag: ", name + " " + context.getResources().getIdentifier(name,"string",context.getPackageName()));
+        return context.getResources().getIdentifier(name,"string",context.getPackageName());
     }
 }

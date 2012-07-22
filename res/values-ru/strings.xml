@@ -1,4 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Курс Валют НБРК</string>
+    <string name="AUD">АВСТРАЛИЙСКИЙ ДОЛЛАР</string>
+    <string name="GBP">АНГЛИЙСКИЙ ФУНТ СТЕРЛИНГОВ</string>
+    <string name="BYR">БЕЛОРУССКИЙ РУБЛЬ</string>
+    <string name="HUF">ВЕНГЕРСКИЙ ФОРИНТ</string>
+    <string name="DKK">ДАТСКАЯ КРОНА</string>
+    <string name="AED">ДИРХАМ ОАЭ</string>
+    <string name="USD">ДОЛЛАР США</string>
+    <string name="EUR">ЕВРО</string>
+    <string name="CAD">КАНАДСКИЙ ДОЛЛАР</string>
+    <string name="CNY">КИТАЙСКИЙ ЮАНЬ</string>
+    <string name="KWD">КУВЕЙТСКИЙ ДИНАР</string>
+    <string name="KGS">КЫРГЫЗСКИЙ СОМ</string>
+    <string name="LVL">ЛАТВИЙСКИЙ ЛАТ</string>
+    <string name="LTL">ЛИТОВСКИЙ ЛИТ</string>
+    <string name="MDL">МОЛДАВСКИЙ ЛЕЙ</string>
+    <string name="NOK">НОРВЕЖСКАЯ КРОНА</string>
+    <string name="PLN">ПОЛЬСКИЙ ЗЛОТЫЙ</string>
+    <string name="SAR">РИЯЛ САУДОВСКОЙ АРАВИИ</string>
+    <string name="RUB">РОССИЙСКИЙ РУБЛЬ</string>
+    <string name="XDR">СДР</string>
+    <string name="SGD">СИНГАПУРСКИЙ ДОЛЛАР</string>
+    <string name="TJS">ТАДЖИКСКИЙ СОМОНИ</string>
+    <string name="TRY">ТУРЕЦКАЯ ЛИРА</string>
+    <string name="UZS">УЗБЕКСКИЙ СУМ</string>
+    <string name="UAH">УКРАИНСКАЯ ГРИВНА</string>
+    <string name="CZK">ЧЕШСКАЯ КРОНА</string>
+    <string name="SEK">ШВЕДСКАЯ КРОНА</string>
+    <string name="CHF">ШВЕЙЦАРСКИЙ ФРАНК</string>
+    <string name="ZAR">ЮЖНО-АФРИКАНСКИЙ РАНД</string>
+    <string name="KRW">ЮЖНО-КОРЕЙСКИХ ВОН</string>
+    <string name="JPY">ЯПОНСКАЯ ЙЕНА</string>
+    <string name="EEK">ЭСТОНСКАЯ КРОНА</string>
 </resources>

@@ -1,44 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="DEBUG" />
+  <component name="AndroidDesignerProfile">
+    <option name="fullProfile">
+      <profile>
+        <option name="device" value="2.7in QVGA" />
+        <option name="deviceConfiguration" value="Portrait" />
+        <option name="localeLanguage" value="ru" />
+        <option name="targetHashString" value="android-15" />
+        <option name="theme" value="Theme.DeviceDefault.Light" />
+      </profile>
+    </option>
+    <option name="selection" value="[Full]" />
+  </component>
+  <component name="AndroidLayoutPreviewToolWindow">
+    <option name="state">
+      <GlobalState>
+        <option name="device" value="3.7in WVGA (Nexus One)" />
+        <option name="dockMode" value="" />
+        <option name="localeLanguage" value="ru" />
+        <option name="nightMode" value="notnight" />
+        <option name="targetHashString" value="android-15" />
+        <option name="theme" value="Theme.DeviceDefault.Light" />
+        <option name="visible" value="false" />
+      </GlobalState>
+    </option>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4924b777-1902-44d7-8a6a-feadf3fd4118" name="Default" comment="Country flags added">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/aed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/aud.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/byr.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/cad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/chf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/cny.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/czk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/dkk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/eek.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/gbp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/huf.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/jpy.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/kgs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/krw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/kwd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ltl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/lvl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/mdl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/nok.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/pln.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/sar.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/sek.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/sgd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/tjs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/uah.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/uzs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ytl.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable-hdpi/zar.png" />
+    <list default="true" id="4924b777-1902-44d7-8a6a-feadf3fd4118" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NBRK-rates.iml" afterPath="$PROJECT_DIR$/NBRK-rates.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/nbrk/rates/BuildConfig.java" afterPath="$PROJECT_DIR$/gen/com/nbrk/rates/BuildConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/nbrk/rates/Manifest.java" afterPath="$PROJECT_DIR$/gen/com/nbrk/rates/Manifest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/nbrk/rates/R.java" afterPath="$PROJECT_DIR$/gen/com/nbrk/rates/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nbrk/rates/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/nbrk/rates/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/row_layout.xml" afterPath="$PROJECT_DIR$/res/layout/row_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values-ru/strings.xml" afterPath="$PROJECT_DIR$/res/values-ru/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nbrk/rates/RatesAdapter.java" afterPath="$PROJECT_DIR$/src/com/nbrk/rates/RatesAdapter.java" />
     </list>
     <ignored path="NBRK-rates.iws" />
@@ -99,10 +93,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0">
+            <state line="33" column="51" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.4323144">
               <folding />
             </state>
           </provider>
@@ -111,7 +105,49 @@
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="8" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+            <state line="18" column="77" selection-start="948" selection-end="948" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="XMLParser.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/XMLParser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="16" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values-ru/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="47" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="row_layout.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/row_layout.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state line="3" column="61" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state line="7" column="60" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,16 +156,16 @@
       <file leaf-file-name="RatesAdapter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/RatesAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="0" selection-start="2117" selection-end="2117" vertical-scroll-proportion="0.0">
+            <state line="91" column="86" selection-start="2941" selection-end="2941" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XMLParser.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/XMLParser.java">
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="3" selection-start="790" selection-end="790" vertical-scroll-proportion="0.03930131">
+            <state line="34" column="57" selection-start="1591" selection-end="1634" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -158,10 +194,13 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/nbrk/rates/XMLParser.java" />
-        <option value="$PROJECT_DIR$/src/com/nbrk/rates/RatesAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/nbrk/rates/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/nbrk/rates/RatesAdapter.java" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/values-ru/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/row_layout.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -170,7 +209,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="32" />
+    <option name="y" value="40" />
     <option name="width" value="1456" />
     <option name="height" value="876" />
   </component>
@@ -440,38 +479,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NBRK-rates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NBRK-rates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NBRK-rates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="NBRK-rates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-hdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -483,17 +490,28 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="C:/Program Files (x86)/Git/bin/git.exe" />
+    <property name="options.lastSelected" value="preferences.general" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="ICS" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Android Application.NBRK-rates">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
       <module name="" />
       <setting name="path" value="" />
@@ -501,14 +519,6 @@
       <setting name="params" value="" />
       <setting name="workDir" value="" />
       <setting name="debug" value="false" />
-      <method>
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
       <method>
         <option name="Make" enabled="true" />
       </method>
@@ -540,21 +550,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -580,6 +575,21 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="Make" enabled="true" />
       </method>
@@ -644,7 +654,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="COMMAND_LINE" value="" />
       <option name="WIPE_USER_DATA" value="false" />
@@ -691,6 +701,11 @@
       <created>1342803953097</created>
       <updated>1342803953097</updated>
     </task>
+    <task id="LOCAL-00001" summary="Country flags added">
+      <created>1342862724612</created>
+      <updated>1342862724612</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -714,30 +729,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="32" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="40" width="1456" height="876" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32729805" sideWeight="0.48181817" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.47919655" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6705686" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.52230215" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.50645626" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.48181817" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.47266188" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32729805" sideWeight="0.49426112" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.4969697" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6705686" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2374462" sideWeight="0.67270195" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2374462" sideWeight="0.67270195" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.48852223" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.67270195" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.67270195" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Properties" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.4969697" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.67270195" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.47266188" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -800,34 +818,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/XMLParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="3" selection-start="790" selection-end="790" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="74" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="8" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/RatesAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="0" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="74" selection-start="1035" selection-end="1035" vertical-scroll-proportion="0.0">
@@ -875,35 +865,69 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="8" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/drawable-hdpi/ytl.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="816" selection-end="816" vertical-scroll-proportion="0.0">
+        <state line="34" column="57" selection-start="1591" selection-end="1634" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/RatesAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="2117" selection-end="2117" vertical-scroll-proportion="0.0">
+        <state line="91" column="86" selection-start="2941" selection-end="2941" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values-ru/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="47" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/row_layout.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="3" column="61" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="7" column="60" selection-start="351" selection-end="351" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="77" selection-start="948" selection-end="948" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/XMLParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="3" selection-start="790" selection-end="790" vertical-scroll-proportion="0.03930131">
+        <state line="43" column="16" selection-start="1258" selection-end="1258" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="51" selection-start="1003" selection-end="1003" vertical-scroll-proportion="0.4323144">
           <folding />
         </state>
       </provider>
