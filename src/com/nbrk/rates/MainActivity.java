@@ -1,8 +1,12 @@
 package com.nbrk.rates;
 
 import android.app.Activity;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -28,29 +32,37 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        ArrayList<HashMap<String,String>> rates = new ArrayList<HashMap<String, String>>();
+        ConnectivityManager connMgr = (ConnectivityManager)getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 
-        XMLParser parser = new XMLParser();
-        //String xml = parser.getXMLFromUrl(URL);
-        Document doc = parser.getDomElement(URL);
+        if (networkInfo != null && networkInfo.isConnected()) {
 
-        NodeList nl = doc.getElementsByTagName("item");
+            ArrayList<HashMap<String,String>> rates = new ArrayList<HashMap<String, String>>();
 
-        for (int i=0; i<nl.getLength(); i++) {
-            HashMap<String, String> map = new HashMap<String, String>();
-            Element e = (Element) nl.item(i);
+            XMLParser parser = new XMLParser();
+            //String xml = parser.getXMLFromUrl(URL);
+            Document doc = parser.getDomElement(URL);
 
-            map.put(KEY_FC, parser.getValue(e,KEY_FC));
-            map.put(KEY_FC_LABEL, KEY_FC_LABEL);
-            map.put(KEY_PRICE, parser.getValue(e,KEY_PRICE));
+            NodeList nl = doc.getElementsByTagName("item");
 
-            if (!parser.getValue(e,KEY_FC).equalsIgnoreCase("TRL")) {
-                rates.add(map);
+            for (int i=0; i<nl.getLength(); i++) {
+                HashMap<String, String> map = new HashMap<String, String>();
+                Element e = (Element) nl.item(i);
+
+                map.put(KEY_FC, parser.getValue(e,KEY_FC));
+                map.put(KEY_FC_LABEL, KEY_FC_LABEL);
+                map.put(KEY_PRICE, parser.getValue(e,KEY_PRICE));
+
+                if (!parser.getValue(e,KEY_FC).equalsIgnoreCase("TRL")) {
+                    rates.add(map);
+                }
             }
-        }
 
-        list = (ListView)findViewById(R.id.list);
-        adapter = new RatesAdapter(this, rates);
-        list.setAdapter(adapter);
+            list = (ListView)findViewById(R.id.list);
+            adapter = new RatesAdapter(this, rates);
+            list.setAdapter(adapter);
+        } else {
+            Toast.makeText(getBaseContext(),R.string.no_network_connection,Toast.LENGTH_LONG).show();
+        }
     }
 }
