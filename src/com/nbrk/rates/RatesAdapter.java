@@ -60,12 +60,16 @@ public class RatesAdapter extends BaseAdapter {
         TextView price = (TextView) rowView.findViewById(R.id.price);
         ImageView flag = (ImageView) rowView.findViewById(R.id.flag);
 
-        HashMap<String, String> rates = new HashMap<String, String>();
+        HashMap<String, String> rates;
         rates = data.get(position);
         String currency = rates.get(MainActivity.KEY_FC);
 
         // setting values in listview
-        fc.setText(currency);
+        if (rates.get(MainActivity.KEY_QUANT).equals("1")) {
+            fc.setText(currency);
+        } else {
+            fc.setText(rates.get(MainActivity.KEY_QUANT) + " " + currency);
+        }
         fc_label.setText(getFCLabel(activity.getApplicationContext(),currency));
         price.setText(rates.get(MainActivity.KEY_PRICE));
 

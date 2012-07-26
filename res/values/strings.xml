@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">NBRK Rates</string>
     <string name="no_network_connection">No network connection available</string>
+    <string name="refresh">Refresh</string>
     <string name="AUD">AUSTRALIAN DOLLAR</string>
     <string name="GBP">GREAT BRITAIN POUND</string>
     <string name="BYR">BELARUS ROUBLE</string>

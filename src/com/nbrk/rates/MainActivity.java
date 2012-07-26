@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
     static final String KEY_FC = "title";
     static final String KEY_FC_LABEL = "НАЗВАНИЕ ВАЛЮТЫ";
     static final String KEY_PRICE = "description";
+    static final String KEY_QUANT = "quant";
 
     ListView list;
     RatesAdapter adapter;
@@ -40,7 +41,7 @@ public class MainActivity extends Activity {
     public boolean onCreateOptionsMenu(Menu menu)
     {
         MenuInflater menuInflater = getMenuInflater();
-        menuInflater.inflate(R.layout.update, menu);
+        menuInflater.inflate(R.menu.main_menu, menu);
         return true;
     }
 
@@ -49,7 +50,7 @@ public class MainActivity extends Activity {
     {
         switch (item.getItemId())
         {
-            case R.id.menu_update:
+            case R.id.menu_refresh:
                 loadRates();
                 return true;
             default:
@@ -78,6 +79,7 @@ public class MainActivity extends Activity {
                 map.put(KEY_FC, parser.getValue(e,KEY_FC));
                 map.put(KEY_FC_LABEL, KEY_FC_LABEL);
                 map.put(KEY_PRICE, parser.getValue(e,KEY_PRICE));
+                map.put(KEY_QUANT, parser.getValue(e,KEY_QUANT));
 
                 if (!parser.getValue(e,KEY_FC).equalsIgnoreCase("TRL")) {
                     rates.add(map);
