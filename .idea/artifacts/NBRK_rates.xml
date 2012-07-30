@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="apk" name="NBRK-rates">
+    <output-path>$PROJECT_DIR$/out/artifacts/NBRK_rates</output-path>
+    <properties id="android-properties">
+      <options>
+        <option name="includeSystemProGuardCfgFile" value="true" />
+        <option name="keyAlias" value="release" />
+        <option name="keyPassword" value="cXdlMTIz" />
+        <option name="keyStorePassword" value="aXl3dGJtZnRtcGl5aA==" />
+        <option name="keyStoreUrl" value="file://C:/Program Files (x86)/Android/signatures/release.keystore" />
+        <option name="proGuardCfgFileUrl" value="file://" />
+        <option name="signingMode" value="RELEASE_SIGNED" />
+      </options>
+    </properties>
+    <root id="archive" name="NBRK-rates.apk">
+      <element id="android-final-package" facet="NBRK-rates/android/Android" />
+    </root>
+  </artifact>
+</component>
