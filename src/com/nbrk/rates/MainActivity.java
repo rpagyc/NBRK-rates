@@ -1,8 +1,10 @@
 package com.nbrk.rates;
 
 import android.app.Activity;
+import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -20,12 +22,8 @@ public class MainActivity extends Activity {
     // all static variables
     static final String URL = "http://nationalbank.kz/rss/rates_all.xml";
     static final String KEY_FC = "title";
-    static final String KEY_FC_LABEL = "НАЗВАНИЕ ВАЛЮТЫ";
     static final String KEY_PRICE = "description";
     static final String KEY_QUANT = "quant";
-
-    ListView list;
-    RatesAdapter adapter;
 
     /**
      * Called when the activity is first created.
@@ -58,17 +56,26 @@ public class MainActivity extends Activity {
         }
     }
 
-    public void loadRates() {
-        ConnectivityManager connMgr = (ConnectivityManager)getSystemService(CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+    public class HttpQuery extends AsyncTask<String, String, ArrayList<HashMap<String,String>>> {
 
-        if (networkInfo != null && networkInfo.isConnected()) {
+        private Context context;
+        private Document doc;
+        private ArrayList<HashMap<String,String>> rates;
+        private XMLParser parser;
+        private ListView list;
+        private RatesAdapter adapter;
 
-            ArrayList<HashMap<String,String>> rates = new ArrayList<HashMap<String, String>>();
+        public HttpQuery(Context context) {
+            this.context = context;
+            parser = new XMLParser();
+            rates = new ArrayList<HashMap<String, String>>();
+        }
 
-            XMLParser parser = new XMLParser();
-            //String xml = parser.getXMLFromUrl(URL);
-            Document doc = parser.getDomElement(URL);
+        @Override
+        protected ArrayList<HashMap<String,String>> doInBackground(String... url) {
+
+            String xml = parser.getXMLFromUrl(url[0]);
+            doc = parser.getDomElement(xml);
 
             NodeList nl = doc.getElementsByTagName("item");
 
@@ -77,7 +84,6 @@ public class MainActivity extends Activity {
                 Element e = (Element) nl.item(i);
 
                 map.put(KEY_FC, parser.getValue(e,KEY_FC));
-                map.put(KEY_FC_LABEL, KEY_FC_LABEL);
                 map.put(KEY_PRICE, parser.getValue(e,KEY_PRICE));
                 map.put(KEY_QUANT, parser.getValue(e,KEY_QUANT));
 
@@ -85,10 +91,23 @@ public class MainActivity extends Activity {
                     rates.add(map);
                 }
             }
-
+            return rates;
+        }
+        @Override
+        protected void onPostExecute(ArrayList<HashMap<String,String>> result) {
+            super.onPostExecute(result);
             list = (ListView)findViewById(R.id.list);
-            adapter = new RatesAdapter(this, rates);
+            adapter = new RatesAdapter(context, rates);
             list.setAdapter(adapter);
+        }
+    }
+
+    public void loadRates(){
+        ConnectivityManager connMgr = (ConnectivityManager)getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+
+        if (networkInfo != null && networkInfo.isConnected()) {
+            new HttpQuery(this).execute(URL);
         } else {
             Toast.makeText(getBaseContext(),R.string.no_network_connection,Toast.LENGTH_LONG).show();
         }

@@ -26,7 +26,7 @@
               android:layout_width="fill_parent"
               android:layout_below="@+id/fc"
               android:layout_toRightOf="@+id/flag"
-              android:text="РОССИЙСКИЙ РУБЛЬ"/>
+              android:text="@string/RUB"/>
     <!-- price -->
     <TextView android:id="@+id/price"
               android:textSize="25dp"

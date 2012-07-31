@@ -24,14 +24,14 @@ import java.util.HashMap;
  */
 public class RatesAdapter extends BaseAdapter {
 
-    private Activity activity;
+    private Context context;
     private ArrayList<HashMap<String, String>> data;
     private static LayoutInflater inflater = null;
 
-    public RatesAdapter(Activity activity, ArrayList<HashMap<String, String>> data) {
-        this.activity = activity;
+    public RatesAdapter(Context context, ArrayList<HashMap<String, String>> data) {
+        this.context = context;
         this.data = data;
-        this.inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     public int getCount() {
@@ -70,7 +70,7 @@ public class RatesAdapter extends BaseAdapter {
         } else {
             fc.setText(rates.get(MainActivity.KEY_QUANT) + " " + currency);
         }
-        fc_label.setText(getFCLabel(activity.getApplicationContext(),currency));
+        fc_label.setText(getFCLabel(context,currency));
         price.setText(rates.get(MainActivity.KEY_PRICE));
 
         //TRY fix
@@ -78,7 +78,7 @@ public class RatesAdapter extends BaseAdapter {
             currency = "YTL";
         }
 
-        flag.setImageResource(getDrawable(activity.getApplicationContext(), currency.toLowerCase()));
+        flag.setImageResource(getDrawable(context, currency.toLowerCase()));
 
         return rowView;
     }
@@ -93,7 +93,7 @@ public class RatesAdapter extends BaseAdapter {
     public static int getFCLabel(Context context, String name) {
         Assert.assertNotNull(context);
         Assert.assertNotNull(name);
-        Log.d("Flag: ", name + " " + context.getResources().getIdentifier(name,"string",context.getPackageName()));
+        //Log.d("Flag: ", name + " " + context.getResources().getIdentifier(name,"string",context.getPackageName()));
         return context.getResources().getIdentifier(name,"string",context.getPackageName());
     }
 }

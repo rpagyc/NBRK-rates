@@ -5,6 +5,7 @@ import android.util.Log;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
@@ -39,16 +40,13 @@ public class XMLParser {
      */
     public String getXMLFromUrl(String url) {
 
-        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        StrictMode.setThreadPolicy(policy);
-
         String xml = null;
 
         try {
             DefaultHttpClient httpClient = new DefaultHttpClient();
-            HttpPost httpPost = new HttpPost(url);
+            HttpGet httpGet = new HttpGet(url);
 
-            HttpResponse httpResponse = httpClient.execute(httpPost);
+            HttpResponse httpResponse = httpClient.execute(httpGet);
             HttpEntity httpEntity = httpResponse.getEntity();
             xml = EntityUtils.toString(httpEntity);
         } catch (UnsupportedOperationException e) {
@@ -64,24 +62,19 @@ public class XMLParser {
 
     /**
      * Getting XML DOM element
-     * @param url
+     * @param xml
      * @return Document
      */
-    public Document getDomElement(String url) {
-        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-        StrictMode.setThreadPolicy(policy);
+    public Document getDomElement(String xml) {
 
         Document doc = null;
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 
         try {
-            URL serviceURL = new URL(url);
-
             DocumentBuilder db = dbf.newDocumentBuilder();
-            //InputSource is = new InputSource();
-            //is.setCharacterStream(new StringReader(xml));
-            doc = db.parse(new InputSource(serviceURL.openStream()));
-            doc.getDocumentElement().normalize();
+            InputSource is = new InputSource();
+            is.setCharacterStream(new StringReader(xml));
+            doc = db.parse(is);
         } catch (ParserConfigurationException e) {
             Log.e("Error: ", e.getMessage());
             return null;
