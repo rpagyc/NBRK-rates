@@ -3,6 +3,7 @@
     <string name="app_name">Курс Валют НБРК</string>
     <string name="no_network_connection">Нет интернет соединения</string>
     <string name="refresh">Обновить</string>
+    <string name="loading">Загрузка...</string>
     <string name="AUD">АВСТРАЛИЙСКИЙ ДОЛЛАР</string>
     <string name="GBP">АНГЛИЙСКИЙ ФУНТ СТЕРЛИНГОВ</string>
     <string name="BYR">БЕЛОРУССКИЙ РУБЛЬ</string>

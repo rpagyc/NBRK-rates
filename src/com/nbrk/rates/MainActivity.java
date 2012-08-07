@@ -1,6 +1,7 @@
 package com.nbrk.rates;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -20,7 +21,7 @@ import java.util.HashMap;
 
 public class MainActivity extends Activity {
     // all static variables
-    static final String URL = "http://nationalbank.kz/rss/rates_all.xml";
+    static final String URL = "http://www.nationalbank.kz/rss/get_rates.cfm";
     static final String KEY_FC = "title";
     static final String KEY_PRICE = "description";
     static final String KEY_QUANT = "quant";
@@ -64,6 +65,7 @@ public class MainActivity extends Activity {
         private XMLParser parser;
         private ListView list;
         private RatesAdapter adapter;
+        private ProgressDialog progDialog;
 
         public HttpQuery(Context context) {
             this.context = context;
@@ -93,9 +95,22 @@ public class MainActivity extends Activity {
             }
             return rates;
         }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+            progDialog = new ProgressDialog(context);
+            progDialog.setMessage(getResources().getString(R.string.loading));
+            progDialog.setIndeterminate(false);
+            progDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+            progDialog.setCancelable(true);
+            progDialog.show();
+        }
+
         @Override
         protected void onPostExecute(ArrayList<HashMap<String,String>> result) {
             super.onPostExecute(result);
+            progDialog.dismiss();
             list = (ListView)findViewById(R.id.list);
             adapter = new RatesAdapter(context, rates);
             list.setAdapter(adapter);
