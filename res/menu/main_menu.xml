@@ -4,4 +4,7 @@
     <item android:id="@+id/menu_refresh"
             android:title="@string/refresh"
             android:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_date"
+          android:title="Date"
+          android:showAsAction="ifRoom" />
 </menu>

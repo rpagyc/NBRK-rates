@@ -1,6 +1,7 @@
 package com.nbrk.rates;
 
 import android.app.Activity;
+import android.app.DialogFragment;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -17,6 +18,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 
 public class MainActivity extends Activity {
@@ -33,9 +35,9 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-
-        loadRates();
+        loadRates(URL);
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
@@ -50,14 +52,17 @@ public class MainActivity extends Activity {
         switch (item.getItemId())
         {
             case R.id.menu_refresh:
-                loadRates();
+                loadRates(URL);
                 return true;
+            case R.id.menu_date:
+                DialogFragment newFragment = new DatePickerFragment();
+                newFragment.show(getFragmentManager(), "datePicker");
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
 
-    public class HttpQuery extends AsyncTask<String, String, ArrayList<HashMap<String,String>>> {
+    private class HttpQuery extends AsyncTask<String, String, ArrayList<HashMap<String,String>>> {
 
         private Context context;
         private Document doc;
@@ -117,12 +122,12 @@ public class MainActivity extends Activity {
         }
     }
 
-    public void loadRates(){
+    public void loadRates(String url){
         ConnectivityManager connMgr = (ConnectivityManager)getSystemService(CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 
         if (networkInfo != null && networkInfo.isConnected()) {
-            new HttpQuery(this).execute(URL);
+            new HttpQuery(this).execute(url);
         } else {
             Toast.makeText(getBaseContext(),R.string.no_network_connection,Toast.LENGTH_LONG).show();
         }
