@@ -1,13 +1,13 @@
 package com.nbrk.rates;
 
-import android.app.Activity;
-import android.app.DialogFragment;
+import android.support.v4.app.FragmentActivity;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -21,12 +21,14 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 
-public class MainActivity extends Activity {
+public class MainActivity extends FragmentActivity {
     // all static variables
     static final String URL = "http://www.nationalbank.kz/rss/get_rates.cfm";
     static final String KEY_FC = "title";
     static final String KEY_PRICE = "description";
     static final String KEY_QUANT = "quant";
+    private Calendar date;
+    DateDialogFragment dateDialogFragment;
 
     /**
      * Called when the activity is first created.
@@ -35,6 +37,7 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        date = Calendar.getInstance();
         loadRates(URL);
     }
 
@@ -55,8 +58,7 @@ public class MainActivity extends Activity {
                 loadRates(URL);
                 return true;
             case R.id.menu_date:
-                DialogFragment newFragment = new DatePickerFragment();
-                newFragment.show(getFragmentManager(), "datePicker");
+                showDatePickerDialog();
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -70,7 +72,7 @@ public class MainActivity extends Activity {
         private XMLParser parser;
         private ListView list;
         private RatesAdapter adapter;
-        private ProgressDialog progDialog;
+        private ProgressDialog progressDialog;
 
         public HttpQuery(Context context) {
             this.context = context;
@@ -104,18 +106,18 @@ public class MainActivity extends Activity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            progDialog = new ProgressDialog(context);
-            progDialog.setMessage(getResources().getString(R.string.loading));
-            progDialog.setIndeterminate(false);
-            progDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-            progDialog.setCancelable(true);
-            progDialog.show();
+            progressDialog = new ProgressDialog(context);
+            progressDialog.setMessage(getResources().getString(R.string.loading));
+            progressDialog.setIndeterminate(false);
+            progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+            progressDialog.setCancelable(true);
+            progressDialog.show();
         }
 
         @Override
         protected void onPostExecute(ArrayList<HashMap<String,String>> result) {
             super.onPostExecute(result);
-            progDialog.dismiss();
+            progressDialog.dismiss();
             list = (ListView)findViewById(R.id.list);
             adapter = new RatesAdapter(context, rates);
             list.setAdapter(adapter);
@@ -131,5 +133,22 @@ public class MainActivity extends Activity {
         } else {
             Toast.makeText(getBaseContext(),R.string.no_network_connection,Toast.LENGTH_LONG).show();
         }
+    }
+
+    public void showDatePickerDialog() {
+        //FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        dateDialogFragment = DateDialogFragment.newInstance(this, new DateDialogFragmentListener() {
+            @Override
+            public void updateChangedDate(int year, int month, int day) {
+                date.set(year, month, day);
+                Log.d("URL: ", URL+"?fdate="+String.format("%2s",day).replace(' ','0')+"."+String.format("%2s",month).replace(' ','0')+"."+year);
+                loadRates(URL + "?fdate=" + String.format("%2s", day).replace(' ', '0') + "." + String.format("%2s", month+1).replace(' ', '0') + "." + year);
+            }
+        }, date);
+        dateDialogFragment.show(getSupportFragmentManager(),"DateDialogFragment");
+    }
+
+    public interface DateDialogFragmentListener {
+        public void updateChangedDate(int year, int month, int day);
     }
 }
