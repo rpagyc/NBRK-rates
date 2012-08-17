@@ -10,7 +10,6 @@ import android.widget.TextView;
 import junit.framework.Assert;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 /**
  * Created with IntelliJ IDEA.
@@ -22,17 +21,17 @@ import java.util.HashMap;
 public class RatesAdapter extends BaseAdapter {
 
     private Context context;
-    private ArrayList<HashMap<String, String>> data;
+    private ArrayList<CurrencyRates> currencyRatesList;
     private static LayoutInflater inflater = null;
 
-    public RatesAdapter(Context context, ArrayList<HashMap<String, String>> data) {
+    public RatesAdapter(Context context, ArrayList<CurrencyRates> currencyRatesList) {
         this.context = context;
-        this.data = data;
+        this.currencyRatesList = currencyRatesList;
         inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     public int getCount() {
-        return data.size();
+        return currencyRatesList.size();
     }
 
     public Object getItem(int position) {
@@ -57,20 +56,20 @@ public class RatesAdapter extends BaseAdapter {
         TextView price = (TextView) rowView.findViewById(R.id.price);
         ImageView flag = (ImageView) rowView.findViewById(R.id.flag);
 
-        HashMap<String, String> rates;
-        rates = data.get(position);
-        String currency = rates.get(MainActivity.KEY_FC);
+        CurrencyRates rates;
+        rates = currencyRatesList.get(position);
+        String currency = rates.getCode();
 
         // setting values in listview
-        if (rates.get(MainActivity.KEY_QUANT).equals("1")) {
+        if (rates.getQuantity().equals("1")) {
             fc.setText(currency);
         } else {
-            fc.setText(rates.get(MainActivity.KEY_QUANT) + " " + currency);
+            fc.setText(rates.getQuantity() + " " + currency);
         }
         fc_label.setText(getFCLabel(context,currency));
-        price.setText(rates.get(MainActivity.KEY_PRICE));
+        price.setText(rates.getPrice());
 
-        //TRY fix
+        // TRY fix - reserved word 'try' can't be used as image name
         if (currency.equalsIgnoreCase("TRY")) {
             currency = "YTL";
         }
@@ -83,14 +82,13 @@ public class RatesAdapter extends BaseAdapter {
     public static int getDrawable(Context context, String name) {
         Assert.assertNotNull(context);
         Assert.assertNotNull(name);
-        //Log.d("Flag: ", name + " " + context.getResources().getIdentifier(name,"drawable",context.getPackageName()));
         return context.getResources().getIdentifier(name,"drawable",context.getPackageName());
     }
 
     public static int getFCLabel(Context context, String name) {
         Assert.assertNotNull(context);
         Assert.assertNotNull(name);
-        //Log.d("Flag: ", name + " " + context.getResources().getIdentifier(name,"string",context.getPackageName()));
         return context.getResources().getIdentifier(name,"string",context.getPackageName());
     }
+
 }
