@@ -7,7 +7,7 @@ package com.nbrk.rates;
  * Time: 14:28
  * To change this template use File | Settings | File Templates.
  */
-public class CurrencyRates {
+class CurrencyRates {
     private long id;
     private String date;
     private String code;

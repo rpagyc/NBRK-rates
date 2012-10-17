@@ -12,7 +12,7 @@ import android.util.Log;
  * Time: 17:44
  * To change this template use File | Settings | File Templates.
  */
-public class DbOpenHelper extends SQLiteOpenHelper {
+class DbOpenHelper extends SQLiteOpenHelper {
 
     public static final String TABLE_RATES = "currency_rates";
     public static final String COLUMN_ID = "_id";
@@ -30,7 +30,7 @@ public class DbOpenHelper extends SQLiteOpenHelper {
             + COLUMN_ID + " integer primary key autoincrement, "
             + COLUMN_DATE + " text, "
             + COLUMN_CODE + " text, "
-            + COLUMN_PRICE + " real, "
+            + COLUMN_PRICE + " text, "
             + COLUMN_QUANTITY + " integer);";
 
     public DbOpenHelper(Context context) {

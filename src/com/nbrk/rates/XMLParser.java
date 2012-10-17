@@ -2,12 +2,16 @@ package com.nbrk.rates;
 
 import android.os.StrictMode;
 import android.util.Log;
+import org.apache.http.HttpConnection;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.params.HttpConnectionParams;
+import org.apache.http.params.HttpParams;
 import org.apache.http.util.EntityUtils;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
@@ -30,7 +34,7 @@ import java.net.URL;
  * Time: 17:46
  * To change this template use File | Settings | File Templates.
  */
-public class XMLParser {
+class XMLParser {
     public XMLParser() {}
 
     /**
@@ -43,11 +47,20 @@ public class XMLParser {
         String xml = null;
 
         try {
-            DefaultHttpClient httpClient = new DefaultHttpClient();
             HttpGet httpGet = new HttpGet(url);
+            HttpParams httpParameters = new BasicHttpParams();
+            // set the timeout in milliseconds until a connection is established
+            int timeoutConnection = 3000;
+            HttpConnectionParams.setConnectionTimeout(httpParameters, timeoutConnection);
+            // set the default socket timeout (SO_TIMEOUT)
+            int timeoutSocket = 5000;
+            HttpConnectionParams.setSoTimeout(httpParameters, timeoutSocket);
+
+            DefaultHttpClient httpClient = new DefaultHttpClient(httpParameters);
 
             HttpResponse httpResponse = httpClient.execute(httpGet);
             HttpEntity httpEntity = httpResponse.getEntity();
+
             xml = EntityUtils.toString(httpEntity);
         } catch (UnsupportedOperationException e) {
             e.printStackTrace();
@@ -93,7 +106,7 @@ public class XMLParser {
      * @param element
      * @return String
      */
-    public final String getElementValue(Node element) {
+    final String getElementValue(Node element) {
         Node child;
         if (element != null) {
             if (element.hasChildNodes()){

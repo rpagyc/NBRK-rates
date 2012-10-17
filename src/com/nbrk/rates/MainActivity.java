@@ -1,5 +1,6 @@
 package com.nbrk.rates;
 
+import android.app.ActionBar;
 import android.support.v4.app.FragmentActivity;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -7,8 +8,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ListView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 public class MainActivity extends FragmentActivity {
@@ -20,7 +23,6 @@ public class MainActivity extends FragmentActivity {
 
     private Calendar date;
 
-    private DateDialogFragment dateDialogFragment;
     private RatesDataSource ratesDataSource;
 
     /**
@@ -30,12 +32,34 @@ public class MainActivity extends FragmentActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
         // set current date
         date = Calendar.getInstance();
 
         ratesDataSource = new RatesDataSource(this);
 
         loadRates();
+    }
+
+    private void loadRates(){
+        ConnectivityManager connMgr = (ConnectivityManager)getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
+
+        if (networkInfo != null && networkInfo.isConnected()) {
+            int day = date.get(Calendar.DAY_OF_MONTH);
+            int month = date.get(Calendar.MONTH);
+            int year = date.get(Calendar.YEAR);
+
+            String dateStr = String.format("%2s", day).replace(' ', '0') + "." + String.format("%2s", month+1).replace(' ', '0') + "." + year;
+
+            setTitle(getResources().getString(R.string.title) + " " + dateStr);
+
+            RatesLoader ratesLoader = new RatesLoader(this, dateStr);
+            ratesLoader.setOnResultsListener(resultsListener);
+            ratesLoader.execute(URL + "?fdate=" + dateStr);
+        } else {
+            Toast.makeText(getBaseContext(),R.string.no_network_connection,Toast.LENGTH_LONG).show();
+        }
     }
 
     @Override
@@ -52,6 +76,7 @@ public class MainActivity extends FragmentActivity {
         switch (item.getItemId())
         {
             case R.id.menu_refresh:
+                date = Calendar.getInstance();
                 loadRates();
                 return true;
             case R.id.menu_date:
@@ -61,32 +86,26 @@ public class MainActivity extends FragmentActivity {
         }
     }
 
-    public void loadRates(){
-        ConnectivityManager connMgr = (ConnectivityManager)getSystemService(CONNECTIVITY_SERVICE);
-        NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
-
-        if (networkInfo != null && networkInfo.isConnected()) {
-            int day = date.get(Calendar.DAY_OF_MONTH);
-            int month = date.get(Calendar.MONTH);
-            int year = date.get(Calendar.YEAR);
-            ratesDataSource.loadRates(String.format("%2s", day).replace(' ', '0') + "." + String.format("%2s", month+1).replace(' ', '0') + "." + year);
-        } else {
-            Toast.makeText(getBaseContext(),R.string.no_network_connection,Toast.LENGTH_LONG).show();
-        }
-    }
-
-    public void showDatePickerDialog() {
-        dateDialogFragment = DateDialogFragment.newInstance(this, new DateDialogFragmentListener() {
+    void showDatePickerDialog() {
+        DateDialogFragment dateDialogFragment = DateDialogFragment.newInstance(this, new DateDialogFragmentListener() {
             @Override
             public void updateChangedDate(int year, int month, int day) {
                 date.set(year, month, day);
                 loadRates();
             }
         }, date);
-        dateDialogFragment.show(getSupportFragmentManager(),"DateDialogFragment");
+        dateDialogFragment.show(getSupportFragmentManager(), "DateDialogFragment");
     }
 
     public interface DateDialogFragmentListener {
         public void updateChangedDate(int year, int month, int day);
     }
+
+    public ResultsListener resultsListener = new ResultsListener() {
+        @Override
+        public void onResultsSucceeded(ArrayList<CurrencyRates> currencyRatesArrayList) {
+            ListView list = (ListView)findViewById(R.id.list);
+            list.setAdapter(new RatesAdapter(getApplicationContext(), currencyRatesArrayList));
+        }
+    };
 }

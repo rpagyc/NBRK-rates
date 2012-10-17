@@ -19,19 +19,22 @@
               android:layout_height="wrap_content"
               android:layout_width="wrap_content"
               android:layout_toRightOf="@+id/flag"
-              android:text="RUB"/>
+              android:text="RUB" android:autoText="false"
+            />
     <!-- currency name -->
     <TextView android:id="@+id/fc_label"
               android:layout_height="wrap_content"
               android:layout_width="fill_parent"
               android:layout_below="@+id/fc"
               android:layout_toRightOf="@+id/flag"
-              android:text="@string/RUB"/>
+              android:text="@string/RUB"
+            />
     <!-- price -->
     <TextView android:id="@+id/price"
               android:textSize="25dp"
               android:layout_height="wrap_content"
               android:layout_width="wrap_content"
               android:layout_alignParentRight="true"
-              android:text="4.59"/>
+              android:text="4.59"
+            />
 </RelativeLayout>

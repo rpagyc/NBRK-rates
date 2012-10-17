@@ -18,10 +18,10 @@ import java.util.ArrayList;
  * Time: 1:53
  * To change this template use File | Settings | File Templates.
  */
-public class RatesAdapter extends BaseAdapter {
+class RatesAdapter extends BaseAdapter {
 
-    private Context context;
-    private ArrayList<CurrencyRates> currencyRatesList;
+    private final Context context;
+    private final ArrayList<CurrencyRates> currencyRatesList;
     private static LayoutInflater inflater = null;
 
     public RatesAdapter(Context context, ArrayList<CurrencyRates> currencyRatesList) {
@@ -79,13 +79,13 @@ public class RatesAdapter extends BaseAdapter {
         return rowView;
     }
 
-    public static int getDrawable(Context context, String name) {
+    private static int getDrawable(Context context, String name) {
         Assert.assertNotNull(context);
         Assert.assertNotNull(name);
         return context.getResources().getIdentifier(name,"drawable",context.getPackageName());
     }
 
-    public static int getFCLabel(Context context, String name) {
+    private static int getFCLabel(Context context, String name) {
         Assert.assertNotNull(context);
         Assert.assertNotNull(name);
         return context.getResources().getIdentifier(name,"string",context.getPackageName());
