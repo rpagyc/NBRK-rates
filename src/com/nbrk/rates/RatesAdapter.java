@@ -27,7 +27,7 @@ class RatesAdapter extends BaseAdapter {
     public RatesAdapter(Context context, ArrayList<CurrencyRates> currencyRatesList) {
         this.context = context;
         this.currencyRatesList = currencyRatesList;
-        inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     public int getCount() {
@@ -47,7 +47,7 @@ class RatesAdapter extends BaseAdapter {
 
         View rowView = convertView;
 
-        if (convertView==null) {
+        if (convertView == null) {
             rowView = inflater.inflate(R.layout.row_layout, null);
         }
 
@@ -66,7 +66,7 @@ class RatesAdapter extends BaseAdapter {
         } else {
             fc.setText(rates.getQuantity() + " " + currency);
         }
-        fc_label.setText(getFCLabel(context,currency));
+        fc_label.setText(getFCLabel(context, currency));
         price.setText(rates.getPrice());
 
         // TRY fix - reserved word 'try' can't be used as image name
@@ -82,13 +82,13 @@ class RatesAdapter extends BaseAdapter {
     private static int getDrawable(Context context, String name) {
         Assert.assertNotNull(context);
         Assert.assertNotNull(name);
-        return context.getResources().getIdentifier(name,"drawable",context.getPackageName());
+        return context.getResources().getIdentifier(name, "drawable", context.getPackageName());
     }
 
     private static int getFCLabel(Context context, String name) {
         Assert.assertNotNull(context);
         Assert.assertNotNull(name);
-        return context.getResources().getIdentifier(name,"string",context.getPackageName());
+        return context.getResources().getIdentifier(name, "string", context.getPackageName());
     }
 
 }

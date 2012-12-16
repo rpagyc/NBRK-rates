@@ -20,7 +20,7 @@ class RatesDataSource {
     private SQLiteDatabase database;
     private final DbOpenHelper dbOpenHelper;
     private final String[] allColumns = {DbOpenHelper.COLUMN_ID, DbOpenHelper.COLUMN_DATE,
-        DbOpenHelper.COLUMN_CODE, DbOpenHelper.COLUMN_PRICE, DbOpenHelper.COLUMN_QUANTITY};
+            DbOpenHelper.COLUMN_CODE, DbOpenHelper.COLUMN_PRICE, DbOpenHelper.COLUMN_QUANTITY};
 
     public RatesDataSource(Context context) {
         dbOpenHelper = new DbOpenHelper(context);

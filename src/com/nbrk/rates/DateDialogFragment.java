@@ -45,7 +45,7 @@ public class DateDialogFragment extends DialogFragment {
         return datePickerDialog;
     }
 
-    private final DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener(){
+    private final DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener() {
         @Override
         public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
             DateDialogFragment.year = year;

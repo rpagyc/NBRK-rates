@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NBRK-rates.iml" filepath="$PROJECT_DIR$/NBRK-rates.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../libs/ActionBarSherlock-4.2.0/library/library.iml" filepath="$PROJECT_DIR$/../libs/ActionBarSherlock-4.2.0/library/library.iml" />
     </modules>
   </component>
 </project>

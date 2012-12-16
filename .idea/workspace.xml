@@ -3,11 +3,11 @@
   <component name="AndroidDesignerProfile">
     <option name="fullProfile">
       <profile>
-        <option name="device" value="2.7in QVGA" />
+        <option name="device" value="3.7in WVGA (Nexus One)" />
         <option name="deviceConfiguration" value="Portrait" />
         <option name="localeLanguage" value="ru" />
-        <option name="targetHashString" value="android-15" />
-        <option name="theme" value="Theme.DeviceDefault.Light" />
+        <option name="targetHashString" value="android-17" />
+        <option name="theme" value="Theme.Holo.Light" />
       </profile>
     </option>
     <option name="selection" value="[Full]" />
@@ -18,8 +18,8 @@
         <option name="device" value="2.7in QVGA" />
         <option name="dockMode" value="" />
         <option name="nightMode" value="notnight" />
-        <option name="targetHashString" value="android-15" />
-        <option name="theme" value="Theme.DeviceDefault.Light" />
+        <option name="targetHashString" value="android-17" />
+        <option name="theme" value="Theme.Holo.Light" />
         <option name="visible" value="false" />
       </GlobalState>
     </option>
@@ -28,22 +28,25 @@
     <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4924b777-1902-44d7-8a6a-feadf3fd4118" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/nbrk/rates/DateDialogFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/nbrk/rates/RatesLoader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/nbrk/rates/ResultsListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    <list default="true" id="4924b777-1902-44d7-8a6a-feadf3fd4118" name="Default" comment="fixed bug occurred when currency rates web service is unavailable">
+      <change type="DELETED" beforePath="C:\Dropbox\projects\NBRK-rates\libs\android-support-v4.jar" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/row_layout.xml" afterPath="$PROJECT_DIR$/res/layout/row_layout.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values-ru/strings.xml" afterPath="$PROJECT_DIR$/res/values-ru/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nbrk/rates/CurrencyRates.java" afterPath="$PROJECT_DIR$/src/com/nbrk/rates/CurrencyRates.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nbrk/rates/DateDialogFragment.java" afterPath="$PROJECT_DIR$/src/com/nbrk/rates/DateDialogFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nbrk/rates/DbOpenHelper.java" afterPath="$PROJECT_DIR$/src/com/nbrk/rates/DbOpenHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nbrk/rates/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/nbrk/rates/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NBRK-rates.iml" afterPath="$PROJECT_DIR$/NBRK-rates.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nbrk/rates/RatesAdapter.java" afterPath="$PROJECT_DIR$/src/com/nbrk/rates/RatesAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nbrk/rates/RatesDataSource.java" afterPath="$PROJECT_DIR$/src/com/nbrk/rates/RatesDataSource.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nbrk/rates/RatesLoader.java" afterPath="$PROJECT_DIR$/src/com/nbrk/rates/RatesLoader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/nbrk/rates/XMLParser.java" afterPath="$PROJECT_DIR$/src/com/nbrk/rates/XMLParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/menu/main_menu.xml" afterPath="$PROJECT_DIR$/res/menu/main_menu.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/row_layout.xml" afterPath="$PROJECT_DIR$/res/layout/row_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="NBRK-rates.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,23 +54,77 @@
     <ignored path=".idea/workspace (X120ePC's conflicted copy 2012-08-17).xml" />
     <ignored path="NBRK-rates.apk" />
     <ignored path=".idea/libraries/android_support_v4.xml" />
-    <file path="/Dummy.txt" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350452963149" ignored="false" />
-    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy5816632789323738384tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350380678857" ignored="false" />
-    <file path="/RatesLoader.java" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350380658176" ignored="false" />
-    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy2773445907747547942tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350376458875" ignored="false" />
-    <file path="/a.dummy" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350385757065" ignored="false" />
-    <file path="$PROJECT_DIR$/../NBRK-rates-widget/src/com/nbrk/widget/XMLParser.java" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350385934796" ignored="false" />
-    <file path="/RatesWidget.java" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386264179" ignored="false" />
-    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy7423243105792682004tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386284751" ignored="false" />
-    <file path="$PROJECT_DIR$/../NBRK-rates-widget/src/com/nbrk/widget/RatesWidget.java" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386318062" ignored="false" />
-    <file path="$PROJECT_DIR$/../NBRK-rates-widget/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386410923" ignored="false" />
-    <file path="$PROJECT_DIR$/../NBRK-rates-widget/gen/com/nbrk/widget/R.java" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386420601" ignored="false" />
-    <file path="$PROJECT_DIR$/../NBRK-rates-widget/gen/com/nbrk/widget/BuildConfig.java" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386447292" ignored="false" />
-    <file path="$PROJECT_DIR$/../NBRK-rates-widget/res/values-ru/strings.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386457491" ignored="false" />
-    <file path="/strings.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386461934" ignored="false" />
-    <file path="$PROJECT_DIR$/../NBRK-rates-widget/res/values/strings.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386461934" ignored="false" />
-    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy3485607902613531954tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386467205" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy2171354176803035384tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355380144616" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy3430536953531282530tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355380048865" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy5162242299273380390tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355380010341" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy7981114580689854332tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355379953195" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy5161667413798367982tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355379741480" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy5576452541037539434tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355379641793" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355674819709" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy3206550097335328983tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355379546984" ignored="false" />
+    <file path="/main.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355379543748" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy4623000337220132192tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355379383745" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy3278659082807239606tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355379276966" ignored="false" />
+    <file path="/row_layout.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355379244277" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy6842535420942706001tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355379163683" ignored="false" />
+    <file path="/RatesLoader.java" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355378920609" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy6913462183607257843tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355378467103" ignored="false" />
+    <file path="/Dummy.txt" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355676995857" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy8510835848068513093tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355377231791" ignored="false" />
+    <file path="/fragment.java" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355376091927" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy5063330627646558755tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353514812471" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy7844605312041581161tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353514781620" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy5244950797854335808tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353514716922" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy8448976258827404899tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353514513538" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy3043607487858779940tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353514214145" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy5756568447005672083tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353510936250" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy521706321329377429tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353510733568" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy6359246018791048071tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353510633973" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy6281864910539337192tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353509821454" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy8184078818000436286tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353509783709" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy3607415021314747083tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353509510420" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy2235824782104884799tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353509299116" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy7510957699383626164tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353509078075" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy1775530649755472692tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353509016758" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy3190243308320121734tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353508949306" ignored="false" />
     <file path="$PROJECT_DIR$/../NBRK-rates-widget/.idea/workspace.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350389121182" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy3485607902613531954tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386467205" ignored="false" />
+    <file path="$PROJECT_DIR$/../NBRK-rates-widget/res/values/strings.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386461934" ignored="false" />
+    <file path="/strings.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386461934" ignored="false" />
+    <file path="$PROJECT_DIR$/../NBRK-rates-widget/res/values-ru/strings.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386457491" ignored="false" />
+    <file path="$PROJECT_DIR$/../NBRK-rates-widget/gen/com/nbrk/widget/BuildConfig.java" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386447292" ignored="false" />
+    <file path="$PROJECT_DIR$/../NBRK-rates-widget/gen/com/nbrk/widget/R.java" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386420601" ignored="false" />
+    <file path="$PROJECT_DIR$/../NBRK-rates-widget/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386410923" ignored="false" />
+    <file path="$PROJECT_DIR$/../NBRK-rates-widget/src/com/nbrk/widget/RatesWidget.java" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386318062" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy7423243105792682004tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386284751" ignored="false" />
+    <file path="/RatesWidget.java" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350386264179" ignored="false" />
+    <file path="$PROJECT_DIR$/../NBRK-rates-widget/src/com/nbrk/widget/XMLParser.java" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350385934796" ignored="false" />
+    <file path="/a.dummy" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350385757065" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy2773445907747547942tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350376458875" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy5816632789323738384tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1350380678857" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy8442043516869016236tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353384899006" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy1571668033197095466tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353392593404" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy6891740175412178794tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353392649517" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy5895337215299201664tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353392903473" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy874417391650243431tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353393051306" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy1591192423022632746tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353393098413" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy1723189744490530027tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353393153922" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy1487859306522155373tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353393257326" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy6481437625038385819tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353393476369" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy288859032748995503tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353393680432" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy7801316802527003395tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353394023241" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy367029566882671409tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353394090192" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy7364225854758467446tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353394167126" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy8163147293177307284tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353394201984" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy3550522780154648238tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353394336047" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy8197353391065299135tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353394389054" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy7318087704528737246tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1353394486049" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy3612632212283741004tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355221858168" ignored="false" />
+    <file path="/*.regexp" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355222660906" ignored="false" />
+    <file path="$USER_HOME$/AppData/Local/Temp/android_manifest_copy1883649726087797215tmp/AndroidManifest.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355224276340" ignored="false" />
+    <file path="/MainActivity.java" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355674639334" ignored="false" />
+    <file path="/a.xml" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355375782724" ignored="false" />
+    <file path="$PROJECT_DIR$/../libs/ActionBarSherlock-4.2.0/library/src/com/actionbarsherlock/app/SherlockFragmentActivity.java" changelist="4924b777-1902-44d7-8a6a-feadf3fd4118" time="1355674206193" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +144,24 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/com/nbrk/rates/RatesLoader.java" line="51" class="com.nbrk.rates.RatesLoader" package="com.nbrk.rates">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -95,6 +170,7 @@
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
         <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
         <option name="COUNT_FILTER" value="0" />
         <option name="CONDITION_ENABLED" value="false" />
@@ -110,6 +186,7 @@
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
         <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
         <option name="COUNT_FILTER" value="0" />
         <option name="CONDITION_ENABLED" value="false" />
@@ -119,8 +196,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -131,64 +206,70 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/MainActivity.java">
+      <file leaf-file-name="DbOpenHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/DbOpenHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="15" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="40" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
+      <file leaf-file-name="row_layout.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/row_layout.xml">
+          <provider editor-type-id="text-editor">
+            <state line="8" column="50" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/values-ru/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="4" selection-start="182" selection-end="249" vertical-scroll-proportion="0.047244094">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XMLParser.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/XMLParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="0" selection-start="2728" selection-end="2728" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RatesLoader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/RatesLoader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="46" selection-start="1634" selection-end="1663" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RatesAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/RatesAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="18" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="32" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+            <state line="2" column="80" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+          <provider editor-type-id="text-editor">
+            <state line="9" column="39" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResultsListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/ResultsListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="41" selection-start="2473" selection-end="2473" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_menu.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/menu/main_menu.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="54" selection-start="454" selection-end="454" vertical-scroll-proportion="0.3372681">
               <folding />
             </state>
           </provider>
@@ -211,6 +292,9 @@
   </component>
   <component name="GitLogSettings">
     <option name="myStructureFilterPaths" />
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="expandStates">
@@ -222,20 +306,20 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/gen/com/nbrk/rates/BuildConfig.java" />
-        <option value="$PROJECT_DIR$/src/com/nbrk/rates/XMLParser.java" />
-        <option value="$PROJECT_DIR$/src/com/nbrk/rates/CurrencyRates.java" />
         <option value="$PROJECT_DIR$/src/com/nbrk/rates/RatesAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/nbrk/rates/DateDialogFragment.java" />
-        <option value="$PROJECT_DIR$/src/com/nbrk/rates/DbOpenHelper.java" />
         <option value="$PROJECT_DIR$/src/com/nbrk/rates/ResultsListener.java" />
         <option value="$PROJECT_DIR$/src/com/nbrk/rates/RatesDataSource.java" />
         <option value="$PROJECT_DIR$/todo.txt" />
-        <option value="$PROJECT_DIR$/res/layout/row_layout.xml" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/res/values-ru/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/tab1.xml" />
+        <option value="$PROJECT_DIR$/res/layout/tab2.xml" />
+        <option value="$PROJECT_DIR$/src/com/nbrk/rates/DbOpenHelper.java" />
+        <option value="$PROJECT_DIR$/gen/com/nbrk/rates/BuildConfig.java" />
         <option value="$PROJECT_DIR$/src/com/nbrk/rates/RatesLoader.java" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/res/layout/row_layout.xml" />
         <option value="$PROJECT_DIR$/src/com/nbrk/rates/MainActivity.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
       </list>
@@ -246,9 +330,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -297,9 +380,6 @@
             <id>Control flow issues</id>
           </State>
           <State>
-            <id>CorrectnessLintAndroid</id>
-          </State>
-          <State>
             <id>Data flow issues</id>
           </State>
           <State>
@@ -327,9 +407,6 @@
             <id>Groovy</id>
           </State>
           <State>
-            <id>IconsUsabilityLintAndroid</id>
-          </State>
-          <State>
             <id>Imports</id>
           </State>
           <State>
@@ -337,9 +414,6 @@
           </State>
           <State>
             <id>Internationalization issues</id>
-          </State>
-          <State>
-            <id>InternationalizationLintAndroid</id>
           </State>
           <State>
             <id>J2ME issues</id>
@@ -360,9 +434,6 @@
             <id>Javadoc issues</id>
           </State>
           <State>
-            <id>LintAndroid</id>
-          </State>
-          <State>
             <id>Logging issues</id>
           </State>
           <State>
@@ -370,9 +441,6 @@
           </State>
           <State>
             <id>Memory issues</id>
-          </State>
-          <State>
-            <id>MessagesCorrectnessLintAndroid</id>
           </State>
           <State>
             <id>Method MetricsGroovy</id>
@@ -402,9 +470,6 @@
             <id>Performance issues</id>
           </State>
           <State>
-            <id>PerformanceLintAndroid</id>
-          </State>
-          <State>
             <id>Plugin DevKit</id>
           </State>
           <State>
@@ -426,9 +491,6 @@
             <id>Security issues</id>
           </State>
           <State>
-            <id>SecurityLintAndroid</id>
-          </State>
-          <State>
             <id>Serialization issues</id>
           </State>
           <State>
@@ -441,13 +503,7 @@
             <id>Threading issuesGroovy</id>
           </State>
           <State>
-            <id>TypographyUsabilityLintAndroid</id>
-          </State>
-          <State>
             <id>UI Form Problems</id>
-          </State>
-          <State>
-            <id>UsabilityLintAndroid</id>
           </State>
           <State>
             <id>Visibility issues</id>
@@ -464,7 +520,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>Abstraction issues</id>
+            <id>AndroidDomInspection</id>
           </State>
         </selected-state>
       </profile-state>
@@ -496,7 +552,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -505,45 +560,77 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NBRK-rates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NBRK-rates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NBRK-rates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="SDKs" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="70" />
     <property name="OverrideImplement.combined" value="true" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="84" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="ExportedApkPath" value="C:\Dropbox\projects\NBRK-rates\NBRK-rates.apk" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="68" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="ExportedModule" value="NBRK-rates" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../keystore/release.keystore" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="88" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="660" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="607" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="63" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="58" />
     <property name="DEBUGGABLE_DEVICE" value="HT24KW114569" />
     <property name="DEBUGGABLE_PROCESS" value="com.nbrk.rates" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="ICS" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="AVD_for_Galaxy_Nexus_by_Google" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="AndroidLayoutSelectedEditor" value="android-designer" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="10.0.91.112:5555" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="HT24KW114569" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="AndroidRunProguardForReleaseBuild" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Android Application.NBRK-rates">
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
       <module name="" />
       <setting name="path" value="" />
@@ -551,6 +638,12 @@
       <setting name="params" value="" />
       <setting name="workDir" value="" />
       <setting name="debug" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
@@ -578,6 +671,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -603,19 +709,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -745,7 +838,11 @@
       <created>1345202290926</created>
       <updated>1345202290926</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed bug occurred when currency rates web service is unavailable">
+      <created>1350453093035</created>
+      <updated>1350453093035</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -769,34 +866,34 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="0" width="1936" height="1056" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32445922" sideWeight="0.47575757" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2275641" sideWeight="0.72911966" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21474358" sideWeight="0.72911966" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27964205" sideWeight="0.47171825" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6705686" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39966556" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39464882" sideWeight="0.5068182" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3261851" sideWeight="0.52454644" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23863636" sideWeight="0.33444816" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.47878787" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39130434" sideWeight="0.4878788" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32844242" sideWeight="0.4765208" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39125562" sideWeight="0.4878788" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" sideWeight="0.4969697" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17424242" sideWeight="0.6571906" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11632871" sideWeight="0.21734235" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.60033447" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.6705686" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1709531" sideWeight="0.67554075" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2742475" sideWeight="0.48278335" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32855093" sideWeight="0.7228412" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19978632" sideWeight="0.72035795" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2679372" sideWeight="0.48078975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32855093" sideWeight="0.38997215" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Properties" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.4969697" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.6705686" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.6705686" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3277592" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32729805" sideWeight="0.47272727" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39966556" sideWeight="0.4969697" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32623318" sideWeight="0.47272727" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39833334" sideWeight="0.4969697" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -833,9 +930,11 @@
     <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="currency rates are stored in db now" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bug occurred when currency rates web service is unavailable" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -853,6 +952,7 @@
     <MESSAGE value="date menu was added" />
     <MESSAGE value="added support for sdk version 4" />
     <MESSAGE value="currency rates are stored in db now" />
+    <MESSAGE value="fixed bug occurred when currency rates web service is unavailable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -862,104 +962,104 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/XMLParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="2728" selection-end="2728" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/DateDialogFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="114" selection-start="650" selection-end="650" vertical-scroll-proportion="0.5026178" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/CurrencyRates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="26" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/todo.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/row_layout.xml">
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state line="9" column="51" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/DbOpenHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.05668016" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/ResultsListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="257" selection-end="257" vertical-scroll-proportion="0.56886226" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/RatesAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="18" selection-start="999" selection-end="999" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="32" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="15" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/RatesDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="53" selection-start="291" selection-end="291" vertical-scroll-proportion="0.19217081" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/XMLParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="2728" selection-end="2728" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/RatesLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="46" selection-start="1634" selection-end="1663" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="24" column="114" selection-start="650" selection-end="650" vertical-scroll-proportion="0.5026455" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="40" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
+        <state line="7" column="4" selection-start="336" selection-end="336" vertical-scroll-proportion="0.33333334" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gen/com/nbrk/rates/BuildConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="1" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/CurrencyRates.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="-0.9704348" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/RatesAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="9" selection-start="2253" selection-end="2253" vertical-scroll-proportion="1.187826" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/RatesDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="242" selection-end="242" vertical-scroll-proportion="0.12633452" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/XMLParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="0" selection-start="2728" selection-end="2728" vertical-scroll-proportion="1.9391304" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/ResultsListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values-ru/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="182" selection-end="249" vertical-scroll-proportion="0.047244094">
+        <state line="14" column="43" selection-start="734" selection-end="734" vertical-scroll-proportion="-5.72" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/RatesLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="14" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/DbOpenHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="80" selection-start="142" selection-end="142" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/row_layout.xml">
+      <provider editor-type-id="text-editor">
+        <state line="8" column="50" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider editor-type-id="text-editor">
+        <state line="9" column="39" selection-start="480" selection-end="480" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nbrk/rates/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="41" selection-start="2473" selection-end="2473" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/main_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="54" selection-start="454" selection-end="454" vertical-scroll-proportion="0.3372681">
           <folding />
         </state>
       </provider>
@@ -1006,7 +1106,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>Android 4.0.3 Platform</last-edited>
+          <last-edited>Android 4.2 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1043,6 +1143,17 @@
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
           <last-edited>android-support-v4</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

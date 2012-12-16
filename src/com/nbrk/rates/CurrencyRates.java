@@ -14,7 +14,8 @@ class CurrencyRates {
     private String price;
     private String quantity;
 
-    public CurrencyRates() {}
+    public CurrencyRates() {
+    }
 
     public CurrencyRates(String date, String code, String price, String quantity) {
         this.date = date;

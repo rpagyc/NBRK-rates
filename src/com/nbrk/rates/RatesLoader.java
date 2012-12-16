@@ -22,12 +22,11 @@ import java.util.ArrayList;
 class RatesLoader extends AsyncTask<String, Void, ArrayList<CurrencyRates>> {
 
     private final Context context;
-    private Document doc;
     private final XMLParser parser;
     private ProgressDialog progressDialog;
     private String date;
     private RatesDataSource ratesDataSource;
-    ResultsListener listener;
+    private ResultsListener listener;
 
     public RatesLoader(Context context, String date) {
         this.context = context;
@@ -51,11 +50,11 @@ class RatesLoader extends AsyncTask<String, Void, ArrayList<CurrencyRates>> {
         if (currencyRatesArrayList.isEmpty()) {
             // get new currency rates
             String xml = parser.getXMLFromUrl(url[0]);
-            if(xml.startsWith("<?xml")) {
-                doc = parser.getDomElement(xml);
+            if (xml != null && xml.startsWith("<?xml")) {
+                Document doc = parser.getDomElement(xml);
                 NodeList nl = doc.getElementsByTagName("item");
 
-                for (int i=0; i<nl.getLength(); i++) {
+                for (int i = 0; i < nl.getLength(); i++) {
 
                     Element e = (Element) nl.item(i);
 
@@ -91,7 +90,7 @@ class RatesLoader extends AsyncTask<String, Void, ArrayList<CurrencyRates>> {
     protected void onPostExecute(ArrayList<CurrencyRates> currencyRatesArrayList) {
         super.onPostExecute(currencyRatesArrayList);
         progressDialog.dismiss();
-        if(currencyRatesArrayList.isEmpty()){
+        if (currencyRatesArrayList.isEmpty()) {
             Toast.makeText(context, R.string.no_data_received, Toast.LENGTH_LONG).show();
         } else {
             listener.onResultsSucceeded(currencyRatesArrayList);
