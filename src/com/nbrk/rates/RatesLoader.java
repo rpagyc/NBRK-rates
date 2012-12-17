@@ -45,7 +45,7 @@ class RatesLoader extends AsyncTask<String, Void, ArrayList<CurrencyRates>> {
         // Open Db connection
         ratesDataSource.open();
         // Get currency rates by date
-        currencyRatesArrayList = ratesDataSource.getCurrencyRates(date);
+        currencyRatesArrayList = ratesDataSource.getCurrencyRates(date, context);
         // Check if currency rates are saved in db
         if (currencyRatesArrayList.isEmpty()) {
             // get new currency rates
@@ -63,10 +63,11 @@ class RatesLoader extends AsyncTask<String, Void, ArrayList<CurrencyRates>> {
                             parser.getValue(e, MainActivity.KEY_DESCRIPTION),
                             parser.getValue(e, MainActivity.KEY_QUANT));
 
-                    currencyRatesArrayList.add(currencyRates);
+                    // currencyRatesArrayList.add(currencyRates);
                     // save currency rates to db
                     ratesDataSource.addCurrencyRates(currencyRates);
                 }
+                currencyRatesArrayList = ratesDataSource.getCurrencyRates(date, context);
             }
         }
         // Close Db connection

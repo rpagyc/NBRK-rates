@@ -2,9 +2,11 @@ package com.nbrk.rates;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
+import android.preference.PreferenceManager;
 
 import java.util.ArrayList;
 
@@ -45,15 +47,18 @@ class RatesDataSource {
         database.insert(DbOpenHelper.TABLE_RATES, null, values);
     }
 
-    ArrayList<CurrencyRates> getCurrencyRates(String date) {
+    ArrayList<CurrencyRates> getCurrencyRates(String date, Context context) {
         ArrayList<CurrencyRates> currencyRatesList = new ArrayList<CurrencyRates>();
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
 
         Cursor cursor = database.query(DbOpenHelper.TABLE_RATES, allColumns, DbOpenHelper.COLUMN_DATE + " = '" + date + "'", null, null, null, DbOpenHelper.COLUMN_CODE);
         cursor.moveToFirst();
 
         while (!cursor.isAfterLast()) {
             CurrencyRates currencyRates = cursorToCurrencyRates(cursor);
-            currencyRatesList.add(currencyRates);
+            if(sharedPref.getBoolean("pref_key_show_"+currencyRates.getCode(),true)) {
+                currencyRatesList.add(currencyRates);
+            }
             cursor.moveToNext();
         }
 

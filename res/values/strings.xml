@@ -5,6 +5,8 @@
     <string name="no_data_received">Could not receive rates</string>
     <string name="refresh">Refresh</string>
     <string name="date">Date</string>
+    <string name="settings">Settings</string>
+    <string name="settings_display_currency">Display currency</string>
     <string name="loading">Loading...</string>
     <string name="select">Currency Rates on Date</string>
     <string name="title">Rates on</string>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+            android:key="pref_key_display_options"
+            android:title="@string/settings_display_currency">
+        <CheckBoxPreference android:summary="@string/AUD" android:key="pref_key_show_AUD" android:title="AUD" android:defaultValue="true" android:icon="@drawable/aud"/>
+        <CheckBoxPreference android:summary="@string/GBP" android:key="pref_key_show_GBP" android:title="GBP" android:defaultValue="true" android:icon="@drawable/gbp"/>
+        <CheckBoxPreference android:summary="@string/BYR" android:key="pref_key_show_BYR" android:title="BYR" android:defaultValue="true" android:icon="@drawable/byr"/>
+        <CheckBoxPreference android:summary="@string/HUF" android:key="pref_key_show_HUF" android:title="HUF" android:defaultValue="true" android:icon="@drawable/huf"/>
+        <CheckBoxPreference android:summary="@string/DKK" android:key="pref_key_show_DKK" android:title="DKK" android:defaultValue="true" android:icon="@drawable/dkk"/>
+        <CheckBoxPreference android:summary="@string/AED" android:key="pref_key_show_AED" android:title="AED" android:defaultValue="true" android:icon="@drawable/aed"/>
+        <CheckBoxPreference android:summary="@string/USD" android:key="pref_key_show_USD" android:title="USD" android:defaultValue="true" android:icon="@drawable/usd"/>
+        <CheckBoxPreference android:summary="@string/EUR" android:key="pref_key_show_EUR" android:title="EUR" android:defaultValue="true" android:icon="@drawable/eur"/>
+        <CheckBoxPreference android:summary="@string/CAD" android:key="pref_key_show_CAD" android:title="CAD" android:defaultValue="true" android:icon="@drawable/cad"/>
+        <CheckBoxPreference android:summary="@string/CNY" android:key="pref_key_show_CNY" android:title="CNY" android:defaultValue="true" android:icon="@drawable/cny"/>
+        <CheckBoxPreference android:summary="@string/KWD" android:key="pref_key_show_KWD" android:title="KWD" android:defaultValue="true" android:icon="@drawable/kwd"/>
+        <CheckBoxPreference android:summary="@string/KGS" android:key="pref_key_show_KGS" android:title="KGS" android:defaultValue="true" android:icon="@drawable/kgs"/>
+        <CheckBoxPreference android:summary="@string/LVL" android:key="pref_key_show_LVL" android:title="LVL" android:defaultValue="true" android:icon="@drawable/lvl"/>
+        <CheckBoxPreference android:summary="@string/LTL" android:key="pref_key_show_LTL" android:title="LTL" android:defaultValue="true" android:icon="@drawable/ltl"/>
+        <CheckBoxPreference android:summary="@string/MDL" android:key="pref_key_show_MDL" android:title="MDL" android:defaultValue="true" android:icon="@drawable/mdl"/>
+        <CheckBoxPreference android:summary="@string/NOK" android:key="pref_key_show_NOK" android:title="NOK" android:defaultValue="true" android:icon="@drawable/nok"/>
+        <CheckBoxPreference android:summary="@string/PLN" android:key="pref_key_show_PLN" android:title="PLN" android:defaultValue="true" android:icon="@drawable/pln"/>
+        <CheckBoxPreference android:summary="@string/SAR" android:key="pref_key_show_SAR" android:title="SAR" android:defaultValue="true" android:icon="@drawable/sar"/>
+        <CheckBoxPreference android:summary="@string/RUB" android:key="pref_key_show_RUB" android:title="RUB" android:defaultValue="true" android:icon="@drawable/rub"/>
+        <CheckBoxPreference android:summary="@string/XDR" android:key="pref_key_show_XDR" android:title="XDR" android:defaultValue="true" />
+        <CheckBoxPreference android:summary="@string/SGD" android:key="pref_key_show_SGD" android:title="SGD" android:defaultValue="true" android:icon="@drawable/sgd"/>
+        <CheckBoxPreference android:summary="@string/TJS" android:key="pref_key_show_TJS" android:title="TJS" android:defaultValue="true" android:icon="@drawable/tjs"/>
+        <CheckBoxPreference android:summary="@string/TRY" android:key="pref_key_show_TRY" android:title="TRY" android:defaultValue="true" android:icon="@drawable/ytl"/>
+        <CheckBoxPreference android:summary="@string/UZS" android:key="pref_key_show_UZS" android:title="UZS" android:defaultValue="true" android:icon="@drawable/uzs"/>
+        <CheckBoxPreference android:summary="@string/UAH" android:key="pref_key_show_UAH" android:title="UAH" android:defaultValue="true" android:icon="@drawable/uah"/>
+        <CheckBoxPreference android:summary="@string/CZK" android:key="pref_key_show_CZK" android:title="CZK" android:defaultValue="true" android:icon="@drawable/czk"/>
+        <CheckBoxPreference android:summary="@string/SEK" android:key="pref_key_show_SEK" android:title="SEK" android:defaultValue="true" android:icon="@drawable/sek"/>
+        <CheckBoxPreference android:summary="@string/CHF" android:key="pref_key_show_CHF" android:title="CHF" android:defaultValue="true" android:icon="@drawable/chf"/>
+        <CheckBoxPreference android:summary="@string/ZAR" android:key="pref_key_show_ZAR" android:title="ZAR" android:defaultValue="true" android:icon="@drawable/zar"/>
+        <CheckBoxPreference android:summary="@string/KRW" android:key="pref_key_show_KRW" android:title="KRW" android:defaultValue="true" android:icon="@drawable/krw"/>
+        <CheckBoxPreference android:summary="@string/JPY" android:key="pref_key_show_JPY" android:title="JPY" android:defaultValue="true" android:icon="@drawable/jpy"/>
+        <CheckBoxPreference android:summary="@string/EEK" android:key="pref_key_show_EEK" android:title="EEK" android:defaultValue="true" android:icon="@drawable/eek"/>
+    </PreferenceCategory>
+</PreferenceScreen>

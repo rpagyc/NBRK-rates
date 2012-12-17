@@ -1,9 +1,12 @@
 package com.nbrk.rates;
 
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.preference.PreferenceActivity;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
@@ -50,7 +53,9 @@ public class MainActivity extends SherlockFragmentActivity {
             // form date string dd.mm.yyyy
             String dateStr = String.format("%2s", day).replace(' ', '0') + "." + String.format("%2s", month + 1).replace(' ', '0') + "." + year;
             // set title "Rates on dd.mm.yyy"
-            setTitle(getResources().getString(R.string.title) + " " + dateStr);
+            TextView title = (TextView)findViewById(R.id.title);
+            title.setText(getResources().getString(R.string.title) + " " + dateStr);
+            //setTitle(getResources().getString(R.string.title) + " " + dateStr);
 
             RatesLoader ratesLoader = new RatesLoader(this, dateStr);
             ratesLoader.setOnResultsListener(resultsListener);
@@ -76,6 +81,11 @@ public class MainActivity extends SherlockFragmentActivity {
                 return true;
             case R.id.menu_date:
                 showDatePickerDialog();
+                return true;
+            case R.id.menu_settings:
+                Intent intent = new Intent(this, Settings.class);
+                startActivity(intent);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

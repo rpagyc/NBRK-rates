@@ -5,6 +5,8 @@
     <string name="no_data_received">Не удалось загрузить курсы</string>
     <string name="refresh">Обновить</string>
     <string name="date">Дата</string>
+    <string name="settings">Настройки</string>
+    <string name="settings_display_currency">Отображать валюту</string>
     <string name="loading">Загрузка...</string>
     <string name="select">Курсы валют за дату</string>
     <string name="title">Курсы на</string>

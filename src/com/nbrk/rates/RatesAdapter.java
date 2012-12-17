@@ -1,6 +1,9 @@
 package com.nbrk.rates;
 
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,6 +62,7 @@ class RatesAdapter extends BaseAdapter {
         CurrencyRates rates;
         rates = currencyRatesList.get(position);
         String currency = rates.getCode();
+        String key = "pref_key_show_"+currency;
 
         // setting values in listview
         if (rates.getQuantity().equals("1")) {

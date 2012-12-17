@@ -3,7 +3,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="5dp" android:background="#fff">
+                android:padding="5dp">
     <!-- flag image -->
     <ImageView android:id="@+id/flag"
                android:layout_width="wrap_content"
@@ -20,7 +20,7 @@
               android:layout_width="wrap_content"
               android:layout_toRightOf="@+id/flag"
               android:text="RUB"
-              android:textColor="#777"/>
+              android:textColor="#555"/>
     <!-- currency name -->
     <TextView android:id="@+id/fc_label"
               android:layout_height="wrap_content"
@@ -36,5 +36,5 @@
               android:layout_width="wrap_content"
               android:layout_alignParentRight="true"
               android:text="4.59"
-              android:textColor="#777"/>
+              android:textColor="#555"/>
 </RelativeLayout>
