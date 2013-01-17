@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.nbrk.rates.AdmobPreference android:key="ad" />
     <PreferenceCategory
             android:key="pref_key_display_options"
             android:title="@string/settings_display_currency">
         <CheckBoxPreference android:summary="@string/AUD" android:key="pref_key_show_AUD" android:title="AUD" android:defaultValue="true" android:icon="@drawable/aud"/>
         <CheckBoxPreference android:summary="@string/GBP" android:key="pref_key_show_GBP" android:title="GBP" android:defaultValue="true" android:icon="@drawable/gbp"/>
         <CheckBoxPreference android:summary="@string/BYR" android:key="pref_key_show_BYR" android:title="BYR" android:defaultValue="true" android:icon="@drawable/byr"/>
+        <CheckBoxPreference android:summary="@string/BRL" android:key="pref_key_show_BRL" android:title="DRL" android:defaultValue="true" android:icon="@drawable/brl"/>
         <CheckBoxPreference android:summary="@string/HUF" android:key="pref_key_show_HUF" android:title="HUF" android:defaultValue="true" android:icon="@drawable/huf"/>
+        <CheckBoxPreference android:summary="@string/HKD" android:key="pref_key_show_HKD" android:title="HKD" android:defaultValue="true" android:icon="@drawable/hkd"/>
         <CheckBoxPreference android:summary="@string/DKK" android:key="pref_key_show_DKK" android:title="DKK" android:defaultValue="true" android:icon="@drawable/dkk"/>
         <CheckBoxPreference android:summary="@string/AED" android:key="pref_key_show_AED" android:title="AED" android:defaultValue="true" android:icon="@drawable/aed"/>
         <CheckBoxPreference android:summary="@string/USD" android:key="pref_key_show_USD" android:title="USD" android:defaultValue="true" android:icon="@drawable/usd"/>
@@ -19,6 +21,7 @@
         <CheckBoxPreference android:summary="@string/LVL" android:key="pref_key_show_LVL" android:title="LVL" android:defaultValue="true" android:icon="@drawable/lvl"/>
         <CheckBoxPreference android:summary="@string/LTL" android:key="pref_key_show_LTL" android:title="LTL" android:defaultValue="true" android:icon="@drawable/ltl"/>
         <CheckBoxPreference android:summary="@string/MDL" android:key="pref_key_show_MDL" android:title="MDL" android:defaultValue="true" android:icon="@drawable/mdl"/>
+        <CheckBoxPreference android:summary="@string/MYR" android:key="pref_key_show_MYR" android:title="MYR" android:defaultValue="true" android:icon="@drawable/myr"/>
         <CheckBoxPreference android:summary="@string/NOK" android:key="pref_key_show_NOK" android:title="NOK" android:defaultValue="true" android:icon="@drawable/nok"/>
         <CheckBoxPreference android:summary="@string/PLN" android:key="pref_key_show_PLN" android:title="PLN" android:defaultValue="true" android:icon="@drawable/pln"/>
         <CheckBoxPreference android:summary="@string/SAR" android:key="pref_key_show_SAR" android:title="SAR" android:defaultValue="true" android:icon="@drawable/sar"/>

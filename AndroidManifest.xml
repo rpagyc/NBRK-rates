@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.nbrk.rates"
-          android:versionCode="5"
-          android:versionName="1.4">
+          android:versionCode="8"
+          android:versionName="1.7">
     <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="17"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -19,8 +19,11 @@
         <activity android:name=".Settings"
                   android:label="@string/settings"
                   android:enabled="true"
-                android:theme="@style/Theme.Sherlock.Light">
+                  android:theme="@style/Theme.Sherlock.Light">
             <intent-filter android:name="android.intent.category.PREFERENCE"/>
                   </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+                  android:name="com.google.ads.AdActivity" />
     </application>
+    <meta-data android:value="true" android:name="ADMOB_ALLOW_LOCATION_FOR_ADS" />
 </manifest>

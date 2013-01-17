@@ -13,7 +13,9 @@
     <string name="AUD">AUSTRALIAN DOLLAR</string>
     <string name="GBP">GREAT BRITAIN POUND</string>
     <string name="BYR">BELARUS ROUBLE</string>
+    <string name="BRL">BRAZILIAN REAL</string>
     <string name="HUF">HUNGARIAN FORINT</string>
+    <string name="HKD">HONG KONG DOLLAR</string>
     <string name="DKK">DANISH KRONA</string>
     <string name="AED">UAE DIRHAM</string>
     <string name="USD">US DOLLAR</string>
@@ -25,6 +27,7 @@
     <string name="LVL">LATVIAN LAT</string>
     <string name="LTL">LITHUANIAN LIT</string>
     <string name="MDL">MOLDAVIAN LEY</string>
+    <string name="MYR">MALAYSIAN RINGGIT</string>
     <string name="NOK">NORWEGIAN KRONA</string>
     <string name="PLN">POLISH ZLOTY</string>
     <string name="SAR">SAUDI RIYAL</string>
@@ -42,4 +45,5 @@
     <string name="KRW">SOUTH KOREAN WON</string>
     <string name="JPY">JAPANESE YEN</string>
     <string name="EEK">ESTONIAN KRONA</string>
+    <string name="admob_publisher_id">a150d2d17822fc0</string>
 </resources>

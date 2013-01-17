@@ -2,6 +2,7 @@ package com.nbrk.rates;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -70,7 +71,11 @@ class RatesAdapter extends BaseAdapter {
         } else {
             fc.setText(rates.getQuantity() + " " + currency);
         }
-        fc_label.setText(getFCLabel(context, currency));
+        try {
+            fc_label.setText(getFCLabel(context, currency));
+        } catch (Resources.NotFoundException e) {
+            Log.d("CURENCY",currency);
+        }
         price.setText(rates.getPrice());
 
         // TRY fix - reserved word 'try' can't be used as image name

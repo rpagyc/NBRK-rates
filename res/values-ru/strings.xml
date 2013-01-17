@@ -13,7 +13,9 @@
     <string name="AUD">АВСТРАЛИЙСКИЙ ДОЛЛАР</string>
     <string name="GBP">АНГЛИЙСКИЙ ФУНТ СТЕРЛИНГОВ</string>
     <string name="BYR">БЕЛОРУССКИЙ РУБЛЬ</string>
+    <string name="BRL">БРАЗИЛЬСКИЙ РЕАЛ</string>
     <string name="HUF">ВЕНГЕРСКИЙ ФОРИНТ</string>
+    <string name="HKD">ГОНКОНГСКИЙ ДОЛЛАР</string>
     <string name="DKK">ДАТСКАЯ КРОНА</string>
     <string name="AED">ДИРХАМ ОАЭ</string>
     <string name="USD">ДОЛЛАР США</string>
@@ -25,6 +27,7 @@
     <string name="LVL">ЛАТВИЙСКИЙ ЛАТ</string>
     <string name="LTL">ЛИТОВСКИЙ ЛИТ</string>
     <string name="MDL">МОЛДАВСКИЙ ЛЕЙ</string>
+    <string name="MYR">МАЛАЗИЙСКИЙ РИНГГИТ</string>
     <string name="NOK">НОРВЕЖСКАЯ КРОНА</string>
     <string name="PLN">ПОЛЬСКИЙ ЗЛОТЫЙ</string>
     <string name="SAR">РИЯЛ САУДОВСКОЙ АРАВИИ</string>
@@ -42,4 +45,5 @@
     <string name="KRW">ЮЖНО-КОРЕЙСКИХ ВОН</string>
     <string name="JPY">ЯПОНСКАЯ ЙЕНА</string>
     <string name="EEK">ЭСТОНСКАЯ КРОНА</string>
+    <string name="admob_publisher_id">a150d2d17822fc0</string>
 </resources>
